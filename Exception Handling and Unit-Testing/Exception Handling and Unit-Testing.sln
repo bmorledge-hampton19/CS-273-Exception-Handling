@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Exception Handling and Unit-Testing", "Exception Handling and Unit-Testing\Exception Handling and Unit-Testing.vcxproj", "{1AA7F28A-1322-4999-BFEA-8151096BA9FC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HW03 UnitTester", "HW03 UnitTester\HW03 UnitTester.vcxproj", "{033C6AC1-4F2A-49B7-822E-56278DAC5844}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{1AA7F28A-1322-4999-BFEA-8151096BA9FC}.Release|x64.Build.0 = Release|x64
 		{1AA7F28A-1322-4999-BFEA-8151096BA9FC}.Release|x86.ActiveCfg = Release|Win32
 		{1AA7F28A-1322-4999-BFEA-8151096BA9FC}.Release|x86.Build.0 = Release|Win32
+		{033C6AC1-4F2A-49B7-822E-56278DAC5844}.Debug|x64.ActiveCfg = Debug|x64
+		{033C6AC1-4F2A-49B7-822E-56278DAC5844}.Debug|x64.Build.0 = Debug|x64
+		{033C6AC1-4F2A-49B7-822E-56278DAC5844}.Debug|x86.ActiveCfg = Debug|Win32
+		{033C6AC1-4F2A-49B7-822E-56278DAC5844}.Debug|x86.Build.0 = Debug|Win32
+		{033C6AC1-4F2A-49B7-822E-56278DAC5844}.Release|x64.ActiveCfg = Release|x64
+		{033C6AC1-4F2A-49B7-822E-56278DAC5844}.Release|x64.Build.0 = Release|x64
+		{033C6AC1-4F2A-49B7-822E-56278DAC5844}.Release|x86.ActiveCfg = Release|Win32
+		{033C6AC1-4F2A-49B7-822E-56278DAC5844}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
