@@ -79,7 +79,7 @@ namespace HW03UnitTester
 			// Perform the read_int() test.
 			// cin will now read from your file and not from the keyboard.
 			// We expect the correct value returned is 3, ignoring the invalid inputs.
-			Assert::AreEqual(read_int("My prompt: ", -3, 3), 0);
+			Assert::AreEqual(read_int("My prompt: ", 0, 4), 3);
 
 			// Restore cin to the way it was before
 			std::cin.rdbuf(orig_cin);

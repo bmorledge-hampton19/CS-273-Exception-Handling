@@ -22,8 +22,8 @@ If a number outside of the range is given, the function will ask again
 until valid input is obtained.  If the given range is empty, an 
 invalid_argument exception will be thrown.
 @param prompt The message displayed to the user to prompt input.
-@param low The first integer on the lower bound which will be considered invalid.
-@param high The first integer on the upper bound which will be considered invalid.
+@param low The lowest acceptable integer.
+@param high The highest acceptable integer.
 @Return the user's valid input.
 */
 int read_int(const string &prompt, int low, int high) {
@@ -41,7 +41,7 @@ int read_int(const string &prompt, int low, int high) {
 			cin >> num;
 			// Check to see if the response falls within the bounds.
 			// If it does, return it.
-			if (num > low && num < high) return num;
+			if (num >= low && num <= high) return num;
 			// If it doesn't, reprompt for input.
 			else cout << "That is not within the given bounds.\n";
 		}
