@@ -66,6 +66,27 @@ namespace HW03UnitTester
 		// Expect 3 to be returned if given the input: -3\n5\n10\n-2\n3
 		TEST_METHOD(TestCase3) {
 
+			// Open a file stream to read the file zeroinput.txt (remember CS-172)
+			std::ifstream ss("..\\HW03 UnitTester\\Test Case 3 Input.txt");
+
+			// Check if we opened the file stream successfully
+			if (ss.fail())
+				throw int(-1); // throw an integer with value -1
+
+			// Replace the cin read buffer with the read buffer from the file stream 
+			std::streambuf *orig_cin = std::cin.rdbuf(ss.rdbuf());
+
+			// Perform the read_int() test.
+			// cin will now read from your file and not from the keyboard.
+			// We expect the correct value returned is 3, ignoring the invalid inputs.
+			Assert::AreEqual(read_int("My prompt: ", -3, 3), 0);
+
+			// Restore cin to the way it was before
+			std::cin.rdbuf(orig_cin);
+
+			// Close the file stream
+			ss.close();
+
 		}
 
 		// After calling read_int("My prompt: ", 0, 0)
